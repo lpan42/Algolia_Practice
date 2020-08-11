@@ -9,7 +9,7 @@ const styles = {
     maxHeight: "500px",
     overflow: "auto",
   },
-  decriptionDiv: {
+  descriptionDiv: {
     display: "flex",
     flexDirection: "column",
     paddingLeft: "10px",
@@ -26,7 +26,7 @@ const Hits = ({ hits }) => {
       {hits.map((hit, key) => (
         <div key={key} style={styles.hit}>
           <img src={hit.Poster} width='50px' alt={hit.Title}></img>
-          <div style={styles.decriptionDiv}>
+          <div style={styles.descriptionDiv}>
             <b>{hit.Title}</b>
             <span style={{ color: "grey" }}>{hit.Year}</span>
           </div>
